@@ -632,7 +632,8 @@ nav .burger {
         position: absolute;
         cursor: pointer;
         right: 5%;
-        top: 50%;
+        top: -10%;
+        transform: scale(.8) !important;
         transform: rotate(180deg);
         -webkit-transform: translate(-5%, -50%);
         transform: translate(-5%, -50%);

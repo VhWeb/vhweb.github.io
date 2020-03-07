@@ -1,13 +1,13 @@
 'use strict'
-window.onload = (function() {
-    $.fakeLoader({
-        timeToHide:2400,
-        bgColor:"#407599",
-        spinner:"spinner5",
-        anchorPlacement: 'top-bottom',
-    });
-}());
 $(document).ready(function(){
+    $(window).bind('load', function() {
+        $.fakeLoader({
+            timeToHide:2400,
+            bgColor:"#407599",
+            spinner:"spinner5",
+            anchorPlacement: 'top-bottom',
+        });
+    });
     let galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 1,
