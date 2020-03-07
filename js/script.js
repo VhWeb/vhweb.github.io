@@ -1,11 +1,13 @@
 'use strict'
-$(document).ready(function(){
+window.onload = (function() {
     $.fakeLoader({
         timeToHide:2400,
         bgColor:"#407599",
         spinner:"spinner5",
         anchorPlacement: 'top-bottom',
     });
+}());
+$(document).ready(function(){
     let galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 1,
