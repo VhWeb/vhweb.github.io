@@ -1,5 +1,5 @@
-'use strict'
-$(document).ready(function(){
+$(window).on("load",function(){
+    'use strict';
     $(window).bind('load', function() {
         $.fakeLoader({
             timeToHide:2400,
