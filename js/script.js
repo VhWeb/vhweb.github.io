@@ -1,5 +1,5 @@
 'use strict';
-$(window).bind('load', function() {
+$(window).on('load', function() {
     $.fakeLoader({
         timeToHide:2400,
         bgColor:"#407599",
