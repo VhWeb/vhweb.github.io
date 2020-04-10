@@ -1,11 +1,10 @@
 'use strict';
 $(window).on('load', function() {
-    $.fakeLoader({
-        timeToHide:2400,
-        bgColor:"#407599",
-        spinner:"spinner5",
-        anchorPlacement: 'top-bottom',
-    });
+    setTimeout(function() {
+        $('.preloader').addClass("hidden").viewportChecker({
+            classToAdd: 'invisible animated fadeOut', 
+            offset: 300
+    }); }, 2400);
 });
 $(document).ready(function(){
     let galleryThumbs = new Swiper('.gallery-thumbs', {
