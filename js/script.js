@@ -64,7 +64,7 @@ $(document).ready(function(){
         $('.cube-wrapper').css({'transform' : 'rotateY('+ '-90' +'deg)'});
         return $('.cube-wrapper');
     });
-    const burger = document.querySelector(".burger");
+    const burger = document.querySelector(".burger svg");
     const navLinks = document.querySelector(".nav-links");
     const links = document.querySelectorAll(".nav-links li");
     burger.addEventListener("click", () => {
@@ -73,6 +73,7 @@ $(document).ready(function(){
             link.classList.toggle("fade");
             link.addEventListener("click", () => {
                 navLinks.classList.remove("open");
+                burger.classList.remove("active");
                 links.forEach(link => {
                     link.classList.remove("fade");
                 });

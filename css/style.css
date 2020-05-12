@@ -632,7 +632,7 @@ nav .burger {
         position: absolute;
         cursor: pointer;
         right: 5%;
-        top: -10%;
+        /*top: -10%;*/
         transform: scale(.8) !important;
         transform: rotate(180deg);
         -webkit-transform: translate(-5%, -50%);
@@ -699,7 +699,7 @@ nav .burger {
     }
 
     .nav-links.open {
-        z-index: -1;
+        z-index: 0;
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all
